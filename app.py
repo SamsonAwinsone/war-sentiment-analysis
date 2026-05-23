@@ -1225,4 +1225,5 @@ if __name__ == "__main__":
     _init_with_cache()
     log.info("Starting server → http://127.0.0.1:5000")
     # Disable the auto-reloader when using background threads in debug mode.
-    app.run(debug=True, use_reloader=False, host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host="0.0.0.0", port=port)
