@@ -1,0 +1,8 @@
+.venv_py312/
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/cache.json
+.env
+*.xlsx
